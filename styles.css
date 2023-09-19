@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-body {
+.body {
   background-image: url("./img/Under-Construction-BG.png");
   background-position: center;
   background-size: cover;
@@ -86,19 +86,24 @@ body {
 
 .footer {
   position: relative;
+  background: linear-gradient(to right, #d51d5e, #652d90);
+  height: 40px;
+  width: 100%;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  bottom: -24px;
 }
 
 .footer__text {
-  background: linear-gradient(to right, #d51d5e, #652d90);
   position: absolute;
-  bottom: -20px;
   font-size: 35px;
+  line-height: 40px;
   white-space: nowrap;
   color: #fff;
   font-weight: bold;
-  animation: anim 60s linear infinite;
-  -webkit-animation: anim 60s linear infinite;
-  padding: 0 600px;
+  animation: anim 100s linear infinite;
+  -webkit-animation: anim 100s linear infinite;
 }
 
 @keyframes anim {
@@ -125,7 +130,7 @@ body {
     height: 100%;
     min-height: 60vh;
   }
-  .footer__text {
+  .footer {
     bottom: 24px;
   }
 }
